@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Developer Team</title>
+      <link rel="stylesheet" href="AboutUs.css">
+      <link rel="stylesheet" href="NavigationBar.css">
+      <link rel="stylesheet" href="EditorButton.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="shortcut icon" type="image/jpg" href="favIcon.png">
+      <script src="https://kit.fontawesome.com/c156086429.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <video autoplay loop muted plays-inline class="back-video">
+         <source src="DevBack.mp4" type="video/mp4">
+     </video>
+
+         <nav>
+             <a href="index.html"><img src="favIcon.png"></a><h2>TOP TOUR</h2>
+                <div class="nav-links" id="navLinks">
+                     <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <ul>
+                        <li><i class="fa-solid fa-house"></i>  <a href="MainPage.html">Home</a></li>  
+                        <li><i class="fa-solid fa-cart-shopping"></i> <a href="#">Buy Products</a></li>
+                        <li><i class="fa-solid fa-envelope-open"></i>  <a href="Query.html">Query Form</a></li>
+                        <li><i class="fa-regular fa-circle-question"></i><a href="Quiz.html">Quiz</a></li>
+                        <li><i class="fa-solid fa-sitemap"></i> <a  href="Student4.html">Sitemap</a></li>
+                        <li><i class="fa-solid fa-images"></i><a href="Gallery.html">Thumbnails</a></li>
+                        <li><i class="fa-solid fa-user-group"></i>  <a  href="AboutUs.html" class="active">About us</a></li>
+                      </ul>
+                 </div>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+      <br><br><br><br>
+      <h1>Developer Team</h1>
+      <div class="container">
+         <div class="center">
+            <div class="front-face">
+               <div class="contents front">
+                  <img src="student1.jpg" alt="Student1" class="avatar">
+                  <p>Student 1</p>
+               </div>
+            </div>
+            <div class="back-face">
+               <div class="contents back">
+               <ul>
+                  <h2>Example 1</h2>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="center">
+            <div class="front-face">
+               <div class="contents front">
+                  <img src="student2.jpg" alt="Student2" class="avatar">
+                  <p>Student 2</p>
+               </div>
+            </div>
+            <div class="back-face">
+               <div class="contents back">
+               <ul>
+                  <h2>Example 2</h2>
+               </ul>
+               </div>
+            </div>
+         </div>   
+         
+         
+         <div class="center">
+            <div class="front-face">
+               <div class="contents front">
+                  <img src="student3.jpg" alt="Student3" class="avatar">
+                  <p>Student 3</p>
+               </div>
+            </div>
+            <div class="back-face">
+               <div class="contents back">
+               <ul>
+                  <h2>Tharindu Dulanjana</h2>
+               </div>
+            </div>
+         </div>
+
+         
+         <div class="center">
+            <div class="front-face">
+               <div class="contents front">
+                  <img src="student4.jpg" alt="Student4" class="avatar">
+                  <p>Student 4</p>
+               </div>
+            </div>
+            <div class="back-face">
+               <div class="contents back">
+               <ul>
+                  <h2>Example 4</h2>
+               </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="footer" >
+    
+         <button class="button" onclick="location = 'PageEditor3.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+       </div>
+
+   
+      <script>
+
+             //fix the nav bar at the top
+         window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('nav');
+            var sticky = navbar.offsetTop;
+
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add('sticky');
+            } else {
+            navbar.classList.remove('sticky');
+            }
+         })
+
+         //navbar transparent into color
+         window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('nav');
+            var sticky = navbar.offsetTop;
+
+            if (window.pageYOffset > sticky) {
+            navbar.classList.add('sticky');
+            } else {
+            navbar.classList.remove('sticky');
+            }
+         })
+      
+         //when user adjust screen size, menu hides..
+         var navLink=document.getElementById("navLinks")
+
+      function showMenu() {
+         navLinks.style.right= "0";
+      }
+
+      function hideMenu() {
+         navLinks.style.right= "-200px";
+      }
+      </script>
+   </body>
+</html>
+
+

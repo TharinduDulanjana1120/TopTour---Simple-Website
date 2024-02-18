@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.back-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  text-shadow: #042f4b;
+  letter-spacing: 8px;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.center {
+  position: relative;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-left: 70px;
+  width: 250px;
+  height: 340px;
+  transform: translate(-50%,-50%);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  margin: 0 10px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0deg);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+.contents {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  perspective: 1000px;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+}
+
+.front .avatar {
+  padding-right: 27px;
+  width: 220px;
+  height: 250px;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.3s ease;
+}
+
+.front h2 {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+.front p {
+  font-size: 23px;
+  color: white;
+}
+
+.front p:after {
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 2px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.back-face {
+  transform: rotateY(180deg);
+  background: linear-gradient(45deg, #4b8b70 0%, #48584a 100%);
+  opacity: 0;
+}
+
+.back {
+  align-items: center;
+  color: white;
+}
+
+.back ul h2 {
+  padding-right: 18px;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 100px;
+  color: white;
+  font-size: 22px;
+}
+
+.back ul li {
+  padding-right: 18px;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 230%;
+}
+
+.center:hover > .back-face {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.center:hover > .front-face {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}

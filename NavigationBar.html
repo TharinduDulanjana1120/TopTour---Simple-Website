@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="EditorButton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="favIcon.png">
+    <script src="https://kit.fontawesome.com/c156086429.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="favIcon.png"></a><h2>TopTour</h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><i class="fa-solid fa-house"></i>  <a href="MainPage.html">Home</a></li>  
+                  <li><i class="fa-solid fa-cart-shopping"></i> <a href="#">Buy Products</a></li>
+                  <li><i class="fa-solid fa-envelope-open"></i>  <a href="Query.html">Query Form</a></li>
+                  <li><i class="fa-regular fa-circle-question"></i><a href="Quiz.html">Quiz</a></li>
+                  <li><i class="fa-solid fa-sitemap"></i> <a  href="Student4.html">Sitemap</a></li>
+                  <li><i class="fa-solid fa-images"></i><a href="Gallery.html">Thumbnails</a></li>
+                  <li><i class="fa-solid fa-user-group"></i>  <a  href="AboutUs.html">About us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="footer" >
+    
+      <button class="button" onclick="location = 'PageEditor2.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+    </div>
+    <div class="arrow">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a></button>
+      
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Designed by:<br>developers<br><br>&copy; Copyrights 2023</p>
+        <img src="favIcon.png" alt="logo" id="logo">
+        <h2>TopTour Travels</h2>
+        <div class="social-icons">
+          <a href="https://instagram.com/iitlife?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/iitsl?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+    <!------------JavaScript------------>
+    
+    <script>
+      // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    //fix the nav bar at the top
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('nav');
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    })
+
+    //navbar transparent into color
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('nav');
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    })
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    //when user adjust screen size, menu hides..
+      var navLink=document.getElementById("navLinks")
+
+      function showMenu() {
+          navLinks.style.right= "0";
+      }
+
+      function hideMenu() {
+          navLinks.style.right= "-200px";
+      }
+    </script>
+
+</body>
+</html>

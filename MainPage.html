@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopTour Travels</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="EditorButton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="favIcon.png">
+    <script src="https://kit.fontawesome.com/c156086429.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+      <nav>
+          <a href="index.html"><img src="favIcon.png"></a><h2>TopTour</h2>
+             <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                    <li><i class="fa-solid fa-house"></i>  <a href="MainPage.html" class="active">Home</a></li>  
+                    <li><i class="fa-solid fa-cart-shopping"></i> <a href="#">Buy Products</a></li>
+                    <li><i class="fa-solid fa-envelope-open"></i>  <a href="Query.html">Query Form</a></li>
+                    <li><i class="fa-regular fa-circle-question"></i><a href="Quiz.html">Quiz</a></li>
+                    <li><i class="fa-solid fa-sitemap"></i> <a  href="Student4.html">Sitemap</a></li>
+                    <li><i class="fa-solid fa-images"></i><a href="Gallery.html">Thumbnails</a></li>
+                    <li><i class="fa-solid fa-user-group"></i>  <a  href="AboutUs.html">About us</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <section class="homepage" id="home">
+      <video autoplay muted loop poster="video-poster.jpg" id="bg-video">
+        <source src="queryback.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <div class="text">
+          <h1>Embrace Sri Lanka's Enchanting Wonders Today!</h1>
+          <p>Journey to Paradise..</p>
+        </div>
+        <a href="#about">Our Services</a>
+      </div>
+    </section>
+
+    
+    <section class="about" id="about">
+      <h2>Welcome to TopTour Travels</h2>
+      <p>Discover the tropical paradise of Sri Lanka, where captivating landscapes, rich history, and warm hospitality await your arrival. Get ready to embark on a journey of awe-inspiring experiences and create unforgettable memories.</p>
+      <div class="story">
+        <h3>Our Story</h3>
+        <p>At Sri Lanka Tourism, we take pride in showcasing the natural wonders and cultural heritage of this beautiful island. With a profound passion for travel and a commitment to excellence, we have been the trusted guide for travelers from all around the globe.</p>
+      </div>
+      <div class="mission-vision">
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide travelers with exceptional experiences, from pristine beaches to lush jungles and ancient ruins. We aim to offer comprehensive travel services that cater to the unique preferences of each visitor, ensuring a truly personalized and immersive journey.</p>
+        <h3>Our Vision</h3>
+        <p>We envision Sri Lanka Tourism as the ultimate gateway for wanderers seeking authentic encounters with nature and culture. With a strong focus on sustainability and responsible tourism, we strive to preserve the beauty and integrity of our destinations for generations to come.</p>
+      </div>
+    </section>
+
+  <section class="portfolio" id="portfolio">
+      <h2>Our Portfolio</h2>
+      <p>Journey to Paradise:Where History, Nature, and Adventure Unite.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="historical.jpg" alt="historical places">
+          <a href="historicalplaces.html"><h3>Historical Places</h3></a>
+          <p>Step back in time amid Sri Lanka's historic landmarks.</p>
+        </li>
+        <li class="card">
+          <img src="coastal areas.jpg" alt="coastal areas">
+          <a href="CoastalAreas.html"><h3>Coastal Areas</h3></a>
+          <p>Surf, relax, and unwind in Sri Lanka's coastal paradise.</p>
+        </li>
+        <li class="card">
+          <img src="wild life.jpg" alt="wild life">
+          <a href="WildLife.html"><h3>Wild Life</h3></a>
+          <p>Journey into the wild heart of Sri Lanka's natural wonders.</p>
+        </li>
+        <li class="card">
+          <img src="holiday activities.jpg" alt="holiday activities">
+          <a href="Extra_Content_Page.html"><h3>Adventures in Paradise</h3></a>
+          <p>Unleash your spirit in Sri Lanka's adventure paradise.</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> 789 Serenity Street, Kandy 20000, Sri Lanka</p>
+            <p><i class="fas fa-envelope"></i> info@toptourtravels.lk</p>
+            <p><i class="fas fa-phone"></i> (+94) 76-987-6543</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 4:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+            <p><i class="fas fa-globe"></i> www.toptourtravels.lk</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="footer" >
+    
+      <button class="button" onclick="location = 'PageEditor2.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+    </div>
+    <div class="arrow">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a></button>
+      
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Designed by:<br>developers<br><br>&copy; Copyrights 2023</p>
+        <img src="favIcon.png" alt="logo" id="logo">
+        <h2>TopTour Travels</h2>
+        <div class="social-icons">
+          <a href="https://instagram.com/iitlife?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/iitsl?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+    <!------------JavaScript------------>
+    
+    <script>
+      // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    //fix the nav bar at the top
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('nav');
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    })
+
+    //navbar transparent into color
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('nav');
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    })
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+    //when user adjust screen size, menu hides..
+      var navLink=document.getElementById("navLinks")
+
+      function showMenu() {
+          navLinks.style.right= "0";
+      }
+
+      function hideMenu() {
+          navLinks.style.right= "-200px";
+      }
+    </script>
+
+
+
+  </body>
+</html>

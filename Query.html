@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let us know</title>
+  <link rel="stylesheet" href="Query.css">
+  <link rel="stylesheet" href="NavigationBar.css">
+  <link rel="stylesheet" href="EditorButton.css">
+  <link rel="js" href="Query.js">
+  <link rel="shortcut icon" type="image/jpg" href="favIcon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/c156086429.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="favIcon.png"></a><h2>TopTour</h2>
+           <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li><i class="fa-solid fa-house"></i>  <a href="MainPage.html">Home</a></li>  
+                  <li><i class="fa-solid fa-cart-shopping"></i> <a href="#">Buy Products</a></li>
+                  <li><i class="fa-solid fa-envelope-open"></i>  <a href="Query.html" class="active">Query Form</a></li>
+                  <li><i class="fa-regular fa-circle-question"></i><a href="Quiz.html">Quiz</a></li>
+                  <li><i class="fa-solid fa-sitemap"></i> <a  href="Student4.html">Sitemap</a></li>
+                  <li><i class="fa-solid fa-images"></i><a href="Gallery.html">Thumbnails</a></li>
+                  <li><i class="fa-solid fa-user-group"></i>  <a  href="AboutUs.html">About us</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <video autoplay loop muted playsinline class="back-video">
+        <source src="queryback.mp4" type="video/mp4">
+    </video>
+    <br><br><br><br><br><br>
+  <form id="feedbackForm" action="mailto:info@toptourtravels.lk" onsubmit="return validateForm()"  method="post" enctype="text/plain">
+    <legend>Let Us Know</legend>
+    <label for="rating">How satisfied were you with our website?</label>
+    <br>
+    <input type="radio" name="rating" value="1" required>1
+    <input type="radio" name="rating" value="2">2
+    <input type="radio" name="rating" value="3">3
+    <input type="radio" name="rating" value="4">4
+    <input type="radio" name="rating" value="5">5
+    <input type="radio" name="rating" value="6">6
+    <input type="radio" name="rating" value="7">7
+    <input type="radio" name="rating" value="8">8
+    <input type="radio" name="rating" value="9">9
+    <input type="radio" name="rating" value="10">10
+    <br><br>
+    
+    <label for="reason">Please could you tell us your reason for giving this rating?</label>
+    <br>
+    <textarea name="reason" rows="4" cols="50"></textarea>
+    <br><br>
+    
+    <label for="purpose">What was the purpose of your visit to our website today?</label>
+    <br>
+      Research &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="purpose" value="Research"><br>
+      Making a purchase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="purpose" value="Making a purchase"><br>
+      Finding information &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="purpose" value="Finding information"><br>
+      Entertainment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="purpose" value="Entertainment"><br>
+      Other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="purpose" value="Other"><br>
+    <br><br>    
+    
+    <label for="experience">How was your overall experience with our website?</label>
+    <br>
+    <select name="experience">
+      <option value="Select" selected></option>
+      <option value="Excellent">Excellent</option>
+      <option value="Good">Good</option>
+      <option value="Average">Average</option>
+      <option value="Poor">Poor</option>
+    </select>
+    <br><br>
+
+    <label for="interests">What are your interests? (Select all that apply)</label>
+    <br>
+      Outdoor Activities &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="interests" value="Outdoor Activities"><br>
+      Cultural Events &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="interests" value="Cultural Events"><br>
+      Adventure Sport s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="interests" value="Adventure Sports"><br>
+      Food and Dining &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="interests" value="Food and Dining"><br>
+      Historical Sites &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="interests" value="Historical Sites"><br>
+    <br><br>
+
+    <label for="visit">Are you planning to visit Sri Lanka in the future?</label>
+    <br>
+    <input type="radio" name="visit" value="Yes">Yes
+    <input type="radio" name="visit" value="No">No
+    <br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <br>
+  <div class="footer" >
+    <button class="button" onclick="location = 'PageEditor2.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+  </div>
+  <div class="arrow">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a></button>
+    
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Designed by:<br>developers<br><br>&copy; Copyrights 2023</p>
+      <img src="favIcon.png" alt="logo" id="logo">
+      <h2>TopTour Travels</h2>
+      <div class="social-icons">
+        <a href="https://instagram.com/iitlife?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/iitsl?mibextid=LQQJ4d"><i class="fa fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      //fix the nav bar at the top
+      window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('nav');
+        var sticky = navbar.offsetTop;
+
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add('sticky');
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      })
+
+      //navbar transparent into color
+      window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('nav');
+        var sticky = navbar.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+          navbar.classList.add('sticky');
+        } else {
+          navbar.classList.remove('sticky');
+        }
+      })
+
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+
+      //when user adjust screen size, menu hides..
+        var navLink=document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right= "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right= "-200px";
+        }
+  </script>
+
+</body>
+</html>

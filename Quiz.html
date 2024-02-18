@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's see how is your knowledge about Sri Lanka!?</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="EditorButton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="favIcon.png">
+    <script src="https://kit.fontawesome.com/c156086429.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="Nextquestion(0)">
+    
+
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="quizBack.mp4" type="video/mp4">
+        </video>
+
+                <!--Navigation bar-->
+                <nav>
+                    <a href="index.html"><img src="favIcon.png"></a><h2>TopTour</h2>
+                       <div class="nav-links" id="navLinks">
+                            <i class="fa fa-times" onclick="hideMenu()"></i>
+                            <ul>
+                              <li><i class="fa-solid fa-house"></i>  <a href="MainPage.html">Home</a></li>  
+                              <li><i class="fa-solid fa-cart-shopping"></i> <a href="#">Buy Products</a></li>
+                              <li><i class="fa-solid fa-envelope-open"></i>  <a href="Query.html">Query Form</a></li>
+                              <li><i class="fa-regular fa-circle-question"></i><a  class="active" href="Quiz.html">Quiz</a></li>
+                              <li><i class="fa-solid fa-sitemap"></i> <a  href="Student4.html">Sitemap</a></li>
+                              <li><i class="fa-solid fa-images"></i><a href="Gallery.html">Thumbnails</a></li>
+                              <li><i class="fa-solid fa-user-group"></i>  <a  href="AboutUs.html">About us</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+                
+        <br><br><br><br><br>  
+        <div class="mainquizpage" id="mainpage">
+
+            <!--Displays score , number of questions , time remaining-->
+            <div class="quizcontainer">
+                <div class="quizdetails">
+                    <h3>Score: <span id="score"></span></h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h3>Question: <span id="question"></span>/10</h3>
+                    <p id="timer"></p>
+                    
+                    
+                </div>
+
+            <!-- Displays questions -->
+            <div class="displayqcontainer">
+
+                <h1><span id="displayquestion"></span></h1>
+                <br><br>
+                
+
+            </div>
+
+
+                        <p>select your option</p> 
+                <div class="optionmain">
+                    <!--span labels for the 4 different options-->
+                        <span>
+                            <input type="radio" id="opt-1" name="option" class="radio" value="optA" />
+                            <label for="opt-1" class="option" id="opt1label"></label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" id="opt-2" name="option" class="radio" value="optB" />
+                            <label for="opt-2" class="option" id="opt2label"></label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" id="opt-3" name="option" class="radio" value="optC" />
+                            <label for="opt-3" class="option" id="opt3label"></label>
+                        </span>
+                        <br>
+                        <span>
+                            <input type="radio" id="opt-4" name="option" class="radio" value="optD" />
+                            <label for="opt-4" class="option" id="opt4label"></label>
+                        </span>
+                        <!--moves on to the next question-->
+                        <div class="nextcontainer">
+                            <button onclick="handlenextQ()">Next </button>
+                        </div>
+
+                    <div class="optioncontainer" id="optioncontainer">
+                        <div class="rules">
+                            <div class="rulescontainer">
+                                <h2><u>Quiz Rules</u></h2>
+                                <ul>
+                                  <li>10 Questions</li>
+                                  <li>For all questions : 60 seconds</li>
+                                  <li>For correct answer : 2 points <br>Wrong answer : (-1)</li>
+                                  <li>Good luck!</li>
+                                </ul>
+                                <!-- Starts the quiz -->
+                                <button type="button" id="startq" onclick="closeOption()">Start quiz</button> 
+                              </div>
+                        </div>
+                    </div>
+                      
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="displaycontainer" id="displaycontainer">
+
+                <!--Displays the end result-->
+                <div class="box">
+
+                    <h1>Quiz Completed</h1>
+
+                    <div class="displaydetails">
+
+                        <p>Score:<span id="totscore"></span></p>
+                        <p><span id="comment"></span></p>
+                        <p>Quiz summary</p>
+                        <p><span id="QSummary"></span></p>
+                        <P>Time taken to complete quiz:<span id="timetaken">sec</span></P>
+
+                    </div>
+                    <!-- Displays "try again" button which re-direct to the start  -->
+                    <button type="button" id="tryagain" onclick="closeScore()">Try Again</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <!--Page developer-->
+        <div class="footer" >
+            <button class="button" onclick="location = 'PageEditor3.html'" style="vertical-align:middle"><span>Page Editor </span></button>
+        </div>
+
+        <script>
+                //when user adjust screen size, menu hides..
+                var navLink=document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right= "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right= "-200px";
+            }
+        </script>
+      
+        <script src="Quiz.js"></script>
+
+    </body>
+
+</html>
+
+//sources
+mixkit.com 
+istockimages.com

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbartext">Top Tour Travels</div>
+        <div class="ICON">
+            <img class="ICONimg" src="Logo.png" alt="icon">
+
+        </div>
+        <div class="navbar">
+            <a href="MainPage.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="Query.html">Comments</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="Student4.html">Site Map</a>
+            <a class="active" href="Gallery.html">Gallery</a>
+            <a href="AboutUs.html">Student Details</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- show buttons for change text size -->
+        <div class="buttons"> 
+            <span class="btn active" onclick="document.getElementById('text').style.fontSize='1em'">A</span>
+            <span class="btn " onclick="document.getElementById('text').style.fontSize='1.25em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize='1.75em'">A</span>
+        </div>
+
+        <div class="options">
+            <select id="colorScheme" onchange="changeColorScheme(this)">
+                <option value="default">Default</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+                <option value="blue">Blue</option>
+              </select>
+        </div>
+
+        <div class="Content" id="text">
+            <div class="h1">
+                <h1>Places To Visit In Srilanka</h1>
+                <br><h2>2013 - 2022</h2>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Temple of tooth.jpeg" alt="Temple of Tooth" class="img"  onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption >Temple Of Tooth</figcaption>
+                        <div class="desc show" id="description"><img src="Temple of tooth.jpeg" alt="Image of Temple of Tooth" class="img">
+                        <p>The Temple of the Sacred Tooth Relic or Sri Dalada Maligawa,[a] (Sinhala: ශ්‍රී දළදා මාළිගාව) is a Buddhist temple in Kandy, Sri Lanka. It is located in the royal palace complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha. Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country. The relic was historically held by Sinhalese kings. The temple of the tooth is a World Heritage Site mainly due to the temple and the relic.</p></div>
+                    </figure>
+                    
+                </div>
+
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Jaffna Fort.jpeg" alt="Image of Jaffna Fort." class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption >Jaffna Fort</figcaption>
+                        <div class="desc show"><img src="Jaffna Fort.jpeg" alt="Image of Jaffna Fort" class="img">    
+                        <p>Jaffna Fort (Tamil: யாழ்ப்பாணக் கோட்டை, romanized: Yāḻppāṇak Kōṭṭai; Sinhala: යාපනය බලකොටුව Yapanaya Balakotuwa) is a fort built by the Portuguese at Jaffna, Sri Lanka in 1618 under Phillippe de Oliveira following the Portuguese invasion of Jaffna. The fort is located near the coastal village of Gurunagar. Due to numerous miracles attributed to the statue of Virgin Mary in the church nearby, the fort was named as Fortress of Our Lady of Miracles of Jafanapatão (Fortaleza de Nossa Senhora dos Milagres de Jafanapatão). It was captured by the Dutch under Rijcklof van Goens in 1658 who expanded it. In 1795, it was taken over by the British, and remained under the control of a British garrison till 1948. As the only large military fort in the country, due to the presence of only government and military buildings within its ramparts, it was garrisoned by a detachment of the Ceylon Army.</p></div>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Hummanaya.jpeg" alt="Image of Nomadland (2020 film)" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Hummanaya(BlowHole) </figcaption>
+                        <div class="desc show"><img src="Hummanaya.jpeg" alt="Image of Hummanaya" class="img">
+                        <p>Hummanaya is a natural blowhole, and caused when sea water rushes through a submerged cavern and is pushed upwards. The sea water flows underneath the shore, and then comes out of this hole due to pressure. The water fountain created by the geological feature shoots up every couple of minutes, depending on the nature of the sea, with the spray often reaching as high as 25 m (82 ft) to 30 m (98 ft).This site has now been developed as a tourist attraction, with a small visitors' information centre on marine life and a viewing platform.</p></div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <figure class="caption">
+                        <img src="NallurKovil.jpg" alt="Image of Nallur Kovil)" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Nallur Kovil </figcaption>
+                        <div class="desc show"><img src="NallurKovil.jpg" alt="Image of Nallur Kovil" class="img">
+                        <p>Nallur Kandaswamy Kovil (Tamil: நல்லூர் கந்தசுவாமி கோவில் Sinhala: නල්ලුරුව ස්කන්ධ කුමාර කෝවිල) is a significant Hindu temple, located in Nallur, Northern Province, Sri Lanka.The presiding deity is Lord Murugan in the form of the holy 'Vel' in the Sanctum, the primary shrine, and in other forms, namely, Shanmugar, Muthukumaraswami, Valli Kaanthar with consorts Valli and Deivayanai, and Thandayuthapani, sans consorts in secondary shrines in the temple.</p></div>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Polonnaruwa.jpeg" alt="Image of Polonnaruwa" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Polonnaruwa</figcaption>
+                        <div class="desc show"><img src="Polonnaruwa.jpeg" alt="Image of Polonnaruwa" class="img">
+                        <p>Poḷonnaruwa, also referred as Pulathisipura and Vijayarajapura in ancient times, is the main town of Polonnaruwa District in North Central Province, Sri Lanka. The modern town of Polonnaruwa is also known as New Town, and the other part of Polonnaruwa remains as the royal ancient city of the Kingdom of Polonnaruwa. The second oldest of all Sri Lanka's kingdoms, Polonnaruwa was first established as a military post by the Sinhalese kingdom. It was renamed Jananathamangalam by the Chola dynasty after their successful invasion of the country's then capital, Anuradhapura, in the 10th century. The Ancient City of Polonnaruwa has been declared a World Heritage Site</p></div>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Yapahuwa.jpg" alt="Image of Yapahuwa Rock" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Yapahuwa Rock</figcaption>
+                        <div class="desc show"><img src="Yapahuwa.jpg" alt="Image of Yapahuwa Rock" class="img">
+                        <p>Yapahuwa (Sinhalese language : යාපහුව) was one of the ephemeral capitals of medieval Sri Lanka. The citadel of Yapahuwa lying midway between Kurunagala and Anuradhapura was built around a huge granite rock rising abruptly almost a hundred meters above the surrounding lowlands. In 1272, King Bhuvenakabahu transferred the capital from Polonnaruwa to Yapahuwa in the face of Dravidian invasions from South India, bringing the Sacred Tooth Relic with him. Following the death of King Bhuvenakabahu in 1284, the Pandyans of South India invaded Sri Lanka once again, and succeeded in capturing Sacred Tooth Relic. Following its capture, Yapahuwa was largely abandoned and inhabited by Buddhist monks and religious ascetics.</p></div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Safaripark.JPG" alt="Image of Safaripark Ridiyagama" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Safaripark Ridiyagama</figcaption>
+                        <div class="desc show"><img src="Safaripark.JPG" alt="Image of Safaripark Ridiyagama" class="img">
+                            <p>Ridiyagama Safari Park is 500 acre safari park, zoo in Ridiyagama area of Hambantota District, Sri Lanka. The park was opened to the public on 28 May 2016.It would be divided into six zones, where carnivorous animals will be in 4 zones and herbivores animals will be in 2 zones. Meanwhile, carnivore animals such as lions, tigers and leopards will be in 2 zones of the carnivore section. The first phase with the 35-acre African Lion Zone, 54-acre Sri Lanka Elephant Zone and 80 acres World Zone was opened to the public. African, Asian, Australian Zones and a small animal kingdom is under construction as the second phase.</p></div>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Sembuwatta.jpeg" alt="Image of Sembuwatta Lake" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Sembuwatta Lake</figcaption>
+                        <div class="desc show"><img src="Sembuwatta.jpeg" alt="Image of Sembuwatta lake" class="img">
+                            <p>Sembuwatta Lake is a tourist attraction situated at Elkaduwa in the Matale District of Sri Lanka, adjacent to the Campbell's Lane Forest Reserve. Sembuwatta Lake is a man-made lake created from natural spring water. Alongside the lake is a natural swimming pool. Sembuwatta Lake is believed to be 9 m (30 ft) to 12 m (39 ft) deep. Currently, the lake belongs to the Elkaduwa Plantations and produces electricity for the nearby villagers. The lake and surrounds were renovated by Radley Dissage, the Elkaduwa Plantations estate superintendent, who connected the lake to nearby water fountains. </p></div>
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <figure class="caption">
+                        <img src="Dunhinda.jpeg" alt="Image of Dunhinda Falls" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Dunhinda Waterfall</figcaption>
+                        <div class="desc show"><img src="Dunhinda.jpeg" alt="Image of Dunhinda Falls" class="img">
+                            <p>Dunhinda Falls is a waterfall located about 5 kilometres (3.1 mi) from Badulla in the lower central hills of Sri Lanka.The waterfall, which is 64 metres (210 ft) high, gets its name from the smoky dew drops spray, (Dun in sinhala means mist or smoke) which surrounds the area at the foot of the waterfall.The fall is created by the Badulu Oya which flows through Badulla.</p></div>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column" style="margin-bottom: 200px;">
+                    <figure class="caption">
+                        <img src="Adam's Peak.jpeg" alt="Image of  Adam's Peak)" class="img" onmouseover="showDescription(this)" onclick="showDescription(this)" onmouseout="hideDescription(this)">
+                        <figcaption>Adam's Peak</figcaption>
+                        <div class="desc show" style="margin-left: 30%;"><img src="Adam's Peak.jpeg" alt="Image of Adam's Peak" class="img">
+                            <p>Adam's Peak is a 2,243 m tall conical sacred mountain located in central Sri Lanka. It is well known for the Sri Pada , a 1.8 m (5 ft 11 in) rock formation near the summit whose name is also used for the mountain itself. In Buddhist tradition the print is held to be the footprint of the Buddha, in Hindu tradition that of Hanuman or Shiva (its Tamil name, Sivanolipaathamalai, means "Mountain of Shiva's Light") and in some Islamic and Christian traditions that of Adam or St. Thomas.The mountain is also seen as the abode of the deity Saman and also goes by various names associated with this, including Sumanakūta ("Sumana's Mountain") and Samanalakanda ("Mountain of Saman" or "Mountain of the Butterflies")</p></div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>//Script for change font size
+        let buttons = document.querySelector('.buttons');
+        let btn = buttons.querySelectorAll('.btn');
+        for(var i = 0; i<btn.length; i++){
+            btn[i].addEventListener('click', function(){
+                let Current = document.getElementsByClassName('active');
+                Current[0].className = Current[0].className.replace("active", "");
+                this.className += " active";
+            })
+        }
+    </script>
+
+    <script>//Script for show the description box
+        function showDescription(img) {
+            var desc = img.nextElementSibling.nextElementSibling;
+            
+            if (desc.style.display === 'none') {
+                desc.style.display = 'flex';
+            } else {
+            desc.style.display = 'none';
+            }
+        }
+        
+        function hideDescription(img) {
+        var desc = img.nextElementSibling.nextElementSibling;
+        
+        if (desc.style.display === 'flex') {
+            desc.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        function changeColorScheme(select) {
+            var value = select.value;
+        
+            if (value === "default") {
+                document.body.style.backgroundColor = "";
+                document.body.style.color = "white";
+                document.body.style.backgroundImage = "url('background.jpeg')";
+                document.body.style.backgroundSize = "cover";
+                document.body.style.backgroundAttachment = "fixed";
+                document.getElementsByClassName("topbar").style.backgroundColor = "";
+            } else if (value === "dark") {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                document.body.style.backgroundImage = "";
+                document.body.style.backgroundSize = "";
+                document.body.style.backgroundAttachment = "";
+            } else if (value === "light") {
+                document.body.style.backgroundColor = "gray";
+                document.body.style.color = "black";
+                document.body.style.backgroundImage = "";
+                document.body.style.backgroundSize = "";
+                document.body.style.backgroundAttachment = "";
+                document.getElementsByClassName("topbar").style.backgroundColor = "gray";
+            } else if (value === "blue") {
+                document.body.style.backgroundColor = "rgb(93, 93, 213)";
+                document.body.style.color = "white";
+                document.body.style.backgroundImage = "";
+                document.body.style.backgroundSize = "";
+                document.body.style.backgroundAttachment = "";
+            }
+        }
+        window.onload = function() {
+        document.getElementById('colorScheme').value = 'default';
+        changeColorScheme(document.getElementById('colorScheme'));
+    }
+    </script>
+    <footer>
+        <div class="pagebottom">
+            <p class="sitename">Top Tour Travels</p>
+
+            <div class="navfooter">
+                <a href="MainPage.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="Query.html">Comments</a>
+                <a href="Quiz.html">Quiz</a>
+                <a href="Student4.html">Site Map</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="AboutUs.html">Student Details</a>
+            </div>
+            
+
+        </div>
+        <div class="studentinfo">
+            <div class="infotext">
+            A.R Ahmed Rimzy<br>
+            IIT No: 20221636 <br>
+            UOW No: w1999486<br>
+            <a href="Editorspage.html"> Click here for Page editor </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
